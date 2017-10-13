@@ -1,0 +1,69 @@
+{
+  "name": "quark-utils",
+  "version": "0.0.0-development",
+  "description": "Simple utils",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "cross-env BABEL_ENV=production npm run build:clean && babel src -d lib",
+    "build:watch": "npm run build -- -w",
+    "build:clean": "del-cli lib/",
+    "docs": "npm run docs:clean && documentation build src/* --format html --o docs",
+    "docs:clean": "del-cli docs/",
+    "docs:deploy": "npm run docs && gh-pages -d docs/ -m 'docs: update'",
+    "docs:serve": "documentation serve",
+    "test": "cross-env BABEL_ENV=test standard && jest",
+    "test:watch": "npm test -- --watch",
+    "test:coverage": "cross-env BABEL_ENV=test jest --coverage",
+    "prepublish": "npm test && npm run build",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "keywords": [
+    "quark",
+    "utils",
+    "math",
+    "dom"
+  ],
+  "author": "fm_ph",
+  "contributors": [
+    "Patrick Heng <hengpatrick.pro@gmail.com> (http://hengpatrick.fr/)",
+    "Fabien Motte <contact@fabienmotte.com> (http://fabienmotte.com/)"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fm-ph/quark-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fm-ph/quark-utils/issues"
+  },
+  "homepage": "https://github.com/fm-ph/quark-utils",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-eslint": "^8.0.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babelify": "^7.3.0",
+    "cross-env": "^5.0.5",
+    "del-cli": "^1.1.0",
+    "documentation": "^5.3.2",
+    "gh-pages": "^1.0.0",
+    "jest-cli": "^21.0.2",
+    "standard": "^10.0.3",
+    "semantic-release": "^8.0.3"
+  },
+  "dependencies": {},
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "docs",
+      "lib"
+    ],
+    "globals": [
+      "jest",
+      "test",
+      "describe",
+      "it",
+      "expect"
+    ]
+  }
+}
