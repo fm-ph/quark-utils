@@ -3,6 +3,7 @@
 [![build status][travis-image]][travis-url]
 [![stability][stability-image]][stability-url]
 [![npm version][npm-image]][npm-url]
+[![coverage][coveralls-image]][coveralls-url]
 [![js-standard-style][standard-image]][standard-url]
 [![semantic-release][semantic-release-image]][semantic-release-url]
 
@@ -95,11 +96,13 @@ MIT [License](LICENSE.md) © [Patrick Heng](http://hengpatrick.fr/) [Fabien Mott
 
 
 [travis-image]: https://img.shields.io/travis/fm-ph/quark-utils/master.svg?style=flat-square
-[travis-url]: http://travis-ci.org/fm-ph/quark-utils
+[travis-url]: https://travis-ci.org/fm-ph/quark-utils
 [stability-image]: https://img.shields.io/badge/stability-stable-brightgreen.svg?style=flat-square
 [stability-url]: https://nodejs.org/api/documentation.html#documentation_stability_index
 [npm-image]: https://img.shields.io/npm/v/quark-utils.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/quark-utils
+[coveralls-image]: https://img.shields.io/coveralls/fm-ph/quark-utils/master.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/github/fm-ph/quark-utils?branch=master
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [standard-url]: https://github.com/feross/standard
 [semantic-release-image]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square
