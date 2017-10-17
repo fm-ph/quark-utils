@@ -94,7 +94,6 @@ npm run test:coverage
 
 MIT [License](LICENSE.md) © [Patrick Heng](http://hengpatrick.fr/) [Fabien Motte](http://fabienmotte.com/) 
 
-
 [travis-image]: https://img.shields.io/travis/fm-ph/quark-utils/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/fm-ph/quark-utils
 [stability-image]: https://img.shields.io/badge/stability-stable-brightgreen.svg?style=flat-square
